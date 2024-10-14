@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE-IAS IEM (Kolkata)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+        }
+
+        header {
+            background: linear-gradient(90deg, #004085, #2a5faa);
+            color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-container img {
+            width: 100px;
+        }
+
+        .header-title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #003366;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00509e;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #2a5faa;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        li strong {
+            font-weight: 600;
+            color: #004085;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            flex: 1;
+            min-width: 300px; /* Increased the minimum width */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%; /* Make image take up the full card width */
+            height: 200px; /* You can adjust this height to your preference */
+            object-fit: cover;
+            border-radius: 8px; /* Small rounded corners for images */
+            margin-bottom: 10px;
+        }
+
+        /* Make CWC images round */
+        .card img.round {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%; /* Makes the image round */
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #004085;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Photo Slider Styles */
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            margin: 30px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 600px; /* Increased height */
+            object-fit: cover; /* Ensures the image covers the box without distortion */
+            border-radius: 8px;
+}
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            animation: slideAnimation 15s infinite;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slideAnimation {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .logo-container {
+                flex-direction: column;
+            }
+
+            .header-title {
+                font-size: 18px;
+            }
+
+            .slider {
+                height: auto;
+            }
+
+            .slides {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="th (1).jpeg" alt="IEEE-IAS Logo">
+        </div>
+        <div class="header-title">
+            <h1>IEEE-IAS SBC, IEM (Kolkata)</h1>
+        </div>
+        <div class="logo-container">
+            <img src="th.jpeg" alt="IEM Logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#cwc">CWC Members</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About IEEE-IAS SBC, IEM</h2>
+        <p>The IEEE Industry Applications Society (IAS) aims to advance the theory and practice of electrical and electronic engineering in the development, design, manufacture, and application of electrical systems, apparatus, devices, and controls.</p>
+        <p>At IEM, IEEE-IAS fosters a community for students to grow in technical knowledge, engage in impactful projects, and participate in global competitions and conferences.</p>
+    </section>
+
+    <section id="events">
+        <h2>Events</h2>
+        <div class="cards">
+            <div class="card">
+                <a href="eventAI code the future.html">
+                    <img src="AILcode the future'.jpg" alt="Event 1" >
+                </a>
+                <li><strong>Event 1:</strong> AI: Code The Future – Date: 19th to 21st oct</li>
+            </div>
+                <li><strong>Event 2:</strong> Coming Soon – Date: Coming Soon</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="cwc">
+        <h2>CWC Members</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="sneha_di_profile pic .jpg" class="round" alt="Chairperson Photo">
+                <li><strong>Chairperson:</strong> Sneha Das</li>
+            </div>
+            <div class="card">
+                <img src="avi da profile pic .jpg" class="round" alt="Vice-Chairperson Photo">
+                <li><strong>Vice-Chairperson:</strong> Avi Kundu</li>
+            </div>
+            <div class="card">
+                <img src="raja das .jpg" class="round" alt="Secretary Photo">
+                <li><strong>Secretary:</strong> Raja Das</li>
+            </div>
+            <div class="card">
+                <img src="arkadeep_da_profile pic.png" class="round" alt="Treasure">
+                <img src="asmit da profile pic.jpg" class="round" alt="Treasure">
+                <li><strong>Treasure:</strong> Arkadeep & Asmit</li>
+            </div>
+            <div class="card">
+                <img src="himangshu.jpg" class="round" alt="Web Master Photo">
+                <li><strong>Web Master:</strong> Himangshu Singh</li>
+            </div>
+        </div>
+    </section>
+
+    <section id="advisor">
+        <h2>Advisor</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="Sourav_sir.jpg" class="round" alt="Advisor Photo">
+                <li><strong>Advisor:</strong> Dr.Prof Sourav Das</li>
+                <p>[A brief description of the advisor's background, role, and contributions to the club.]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos">
+        <h2>Photo Slider</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="event pic1.jpg" alt="Image 1">
+                <img src="event pic2.jpg" alt="Image 2">
+                <img src="event pic3.jpg" alt="Image 3">
+                <img src="event pic4.jpg" alt="Image 4">
+                <img src="event pic5.jpg" alt="Image 4">
+                <img src="event pic 6.jpg" alt="Image 4">
+                <img src="eveent pic 7.jpg" alt="Image 4">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IEEE-IAS IEM (Kolkata). All rights reserved.</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us through the following contact details:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:ieeeias.iem@gmail.com">ieeeias.iem@gmail.com</a></li>
+                
+                <li><strong>Follow Us on Social Media:</strong></li>
+                <li><strong>Phone:</strong> +91 12345 67890 </li>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61565743400321&mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ieeeiasiemsbc/profilecard/?igsh=MTAyemZkejJmaXViZA==" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/company/ieeeiasiem/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
