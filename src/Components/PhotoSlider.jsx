@@ -3,13 +3,13 @@ import './PhotoSlider.css';
 
 const PhotoSlider = () => {
   const images = [
-    "event pic1.jpg",
-    "event pic2.jpg",
-    "event pic3.jpg",
-    "event pic4.jpg",
-    "event pic5.jpg",
-    "event pic 6.jpg",
-    "event pic 7.jpg"
+    "event_pic1.jpg",
+    "event_pic2.jpg",
+    "event_pic3.jpg",
+    "event_pic4.jpg",
+    "event_pic5.jpg",
+    "event_pic 6.jpg",
+    "event_pic 7.jpg"
   ];
 
   return (

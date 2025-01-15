@@ -4,27 +4,27 @@ import './CWCSection.css';
 const CWCSection = () => {
   const members = [
     {
-      image: "sneha_di_profile pic  - Copy.jpg",
+      image: "sneha_di.jpg",
       title: "Chairperson",
       name: "Sneha Das"
     },
     {
-      image: "avi da profile pic  - Copy.jpg",
+      image: "avi_da.jpg",
       title: "Vice-Chairperson",
       name: "Avi Kundu"
     },
     {
-      image: "raja das  - Copy.jpg",
+      image: "raja_das.jpg",
       title: "Secretary",
       name: "Raja Das"
     },
     {
-      images: ["arkadeep_da_profile pic.png"],
+      images: ["arkadeep.png"],
       title: "Treasurer",
       name: "Arkadeep"
     },
     {
-      images: ["asmit da profile pic - Copy.jpg"],
+      images: ["asmit_da.jpg"],
       title: "Treasurer",
       name: "Asmit    "
     },
