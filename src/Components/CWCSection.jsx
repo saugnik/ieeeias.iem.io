@@ -19,7 +19,7 @@ const CWCSection = () => {
       name: "Raja Das"
     },
     {
-      images: ["arkadeep.png"],
+      images: ["./Images/arkadeep.png"],
       title: "Treasurer",
       name: "Arkadeep"
     },
