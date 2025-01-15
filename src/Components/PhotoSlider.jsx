@@ -16,10 +16,10 @@ const PhotoSlider = () => {
       <h2>Photo Slider</h2>
       <div className="slider-container relative overflow-hidden rounded-lg shadow-lg">
         <div className="slider-track flex w-full h-[400px]">
-          {images.map((image, index) => (
+          {images.map((images, index) => (
             <div key={index} className="slide">
               <img 
-                src={`${image}`} 
+                src={`${images}`} 
                 alt={`Slide ${index + 1}`} 
                 className="w-full h-full object-cover"
               />
