@@ -4,7 +4,7 @@ import './CWCSection.css';
 const CWCSection = () => {
   const members = [
     {
-      image: "sneha_di.jpg",
+      image: "sneha_di_profile.jpg",
       title: "Chairperson",
       name: "Sneha Das"
     },
@@ -29,7 +29,7 @@ const CWCSection = () => {
       name: "Asmit    "
     },
     {
-      image: "himangshu - Copy.jpg",
+      image: "himangshu.jpg",
       title: "Web Master",
       name: "Himangshu Singh"
     }
