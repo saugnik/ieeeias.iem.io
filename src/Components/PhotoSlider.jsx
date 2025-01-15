@@ -1,10 +1,9 @@
 import React from 'react';
-import "./../public/Images"
 import './PhotoSlider.css';
 
 const PhotoSlider = () => {
   const images = [
-    "event_pic1.jpg",
+    "./../Images/event_pic1.jpg",
     "event_pic2.jpg",
     "event_pic3.jpg",
     "event_pic4.jpg",
