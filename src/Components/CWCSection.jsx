@@ -1,5 +1,5 @@
 import React from 'react';
-import Arka from "./../../public/Images/arkadeep.png";
+import Arka from "./../public/Images/arkadeep.png";
 import './CWCSection.css';
 
 const CWCSection = () => {
