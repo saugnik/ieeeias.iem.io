@@ -1,6 +1,6 @@
 import React from 'react';
+import Arka from "./../../public/Images/arkadeep.png";
 import './CWCSection.css';
-
 
 const CWCSection = () => {
   const members = [
@@ -20,7 +20,7 @@ const CWCSection = () => {
       name: "Raja Das"
     },
     {
-      images: ["./../../public/Images/arkadeep.png"],
+      image: Arka,
       title: "Treasurer",
       name: "Arkadeep"
     },
@@ -47,14 +47,14 @@ const CWCSection = () => {
                 member.images.map((img, i) => (
                   <img 
                     key={i}
-                    src={`/images/${img}`}
+                    src={`/Images/${img}`}
                     alt={`${member.title} Photo`}
                     className="member-image"
                   />
                 ))
               ) : (
                 <img 
-                  src={`/images/${member.image}`}
+                  src={`/Images/${member.image}`}
                   alt={`${member.title} Photo`}
                   className="member-image"
                 />
