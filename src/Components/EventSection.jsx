@@ -1,5 +1,5 @@
 import React from 'react';
-import './EventSection.css';
+import './../../src/Components/EventSection.css';
 
 const EventsSection = () => {
   const events = [
