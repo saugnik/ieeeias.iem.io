@@ -1,6 +1,6 @@
 import React from 'react';
 import './Faculty_Advisor.css';
-import SouravSirImage from './../../src/Components/Images/sourav_sir.jpg';
+import SouravSirImage from './../../src/public/Images/sourav_sir.jpg';
 
 const FacultyAdvisor = () => {
   return (
