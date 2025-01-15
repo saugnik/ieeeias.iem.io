@@ -5,6 +5,7 @@ import EventsSection from './Components/EventSection';
 import CWCSection from './Components/CWCSection';
 import PhotoSlider from './Components/PhotoSlider';
 import Footer from './Components/Footer';
+import FacultyAdvisor from './Components/Faculty_advisor';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Navigation />
       <main className="container mx-auto px-4">
+        {/* About Section */}
         <section id="about" className="mx-auto my-5 p-5 max-w-[1000px] bg-white rounded-xl shadow-md">
           <h2 className="text-[#2a5faa] mb-4">About IEEE-IAS SBC, IEM</h2>
           <p className="leading-relaxed text-gray-700">
@@ -21,9 +23,14 @@ function App() {
             At IEM, IEEE-IAS fosters a community for students to grow in technical knowledge, engage in impactful projects, and participate in global competitions and conferences.
           </p>
         </section>
+
+        {/* Other Sections */}
         <EventsSection />
         <CWCSection />
         <PhotoSlider />
+
+        {/* Faculty Advisor Section */}
+        <FacultyAdvisor />
       </main>
       <Footer />
     </div>

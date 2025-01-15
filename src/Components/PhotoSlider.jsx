@@ -1,5 +1,6 @@
 import React from 'react';
 import './PhotoSlider.css';
+import './../public/images/event_pic1.jpg';
 
 const PhotoSlider = () => {
   const images = [
