@@ -1,18 +1,18 @@
 import React from 'react';
-import './EventSection.css';
+import './../../src/Components/EventSection.css';
 
 const EventsSection = () => {
   const events = [
     {
-      image: `${process.env.PUBLIC_URL}/Images/AILcode_the_future.jpg`,
+      image: "AILcode_the_future.jpg", // Reference the filename as a string
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
-      link: "#", // Replace with actual link if available
+      link: "/eventAI_code_the_future.html" // Add correct link or remove if not needed
     },
     {
       title: "Coming Soon",
-      date: "Coming Soon",
-    },
+      date: "Coming Soon"
+    }
   ];
 
   return (
@@ -22,9 +22,9 @@ const EventsSection = () => {
         {events.map((event, index) => (
           <div key={index} className="event-card">
             {event.image ? (
-              <a href={event.link}>
-                <img
-                  src={event.image}
+              <a href={event.link || "#"}> {/* Add a fallback link */}
+                <img 
+                  src={`/images/${event.image}`} // Access image directly from public folder
                   alt={event.title}
                   className="event-image"
                 />
@@ -34,7 +34,7 @@ const EventsSection = () => {
                 <p>No Image Available</p>
               </div>
             )}
-            <strong className="event-title">Event {index + 1}:</strong>
+            <strong className="event-title">Event {index + 1}:</strong> 
             <p>{event.title}</p>
             <p className="event-date">Date: {event.date}</p>
           </div>
