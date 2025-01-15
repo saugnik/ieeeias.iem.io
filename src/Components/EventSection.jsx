@@ -4,7 +4,7 @@ import './../../src/Components/EventSection.css';
 const EventsSection = () => {
   const events = [
     {
-      image: "src/public/Images/AILcode_the_future.jpg",
+      image: "AILcode_the_future.jpg",
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
       link: "eventAI_code_the_future.html"
