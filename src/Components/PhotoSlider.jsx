@@ -13,6 +13,8 @@ const PhotoSlider = () => {
     "event_pic 7.jpg"
   ];
 
+  
+
   return (
     <section id="photos" className="photos-section mx-auto my-5 p-5">
       <h2>Photo Slider</h2>
