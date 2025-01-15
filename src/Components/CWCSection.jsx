@@ -1,5 +1,4 @@
 import React from 'react';
-import Arka from "./../public/Images/arkadeep.png";
 import './CWCSection.css';
 
 const CWCSection = () => {
@@ -20,7 +19,7 @@ const CWCSection = () => {
       name: "Raja Das"
     },
     {
-      image: Arka,
+      image: "arkadeep.png",
       title: "Treasurer",
       name: "Arkadeep"
     },
