@@ -1,6 +1,7 @@
 import React from 'react';
 import './CWCSection.css';
 
+
 const CWCSection = () => {
   const members = [
     {
@@ -19,7 +20,7 @@ const CWCSection = () => {
       name: "Raja Das"
     },
     {
-      images: ["./Images/arkadeep.png"],
+      images: "./../../public/Images/arkadeep.png",
       title: "Treasurer",
       name: "Arkadeep"
     },
