@@ -1,6 +1,5 @@
 import React from 'react';
 import './Faculty_Advisor.css';
-import SouravSirImage from 'C:/Users/Saugnik/ieeeias.iem.io/src/public/Images/Sourav_sir.jpg';
 
 const FacultyAdvisor = () => {
   return (
@@ -11,7 +10,7 @@ const FacultyAdvisor = () => {
         {/* Image */}
         <div className="advisor-image-container w-full md:w-1/3 mb-4 md:mb-0 md:mr-5">
           <img 
-            src={SouravSirImage} 
+            src="/Images/Sourav_sir.jpg" 
             alt="Dr. Sourav Das - Faculty Advisor" 
             className="w-full h-auto rounded-lg shadow-lg object-cover"
           />
