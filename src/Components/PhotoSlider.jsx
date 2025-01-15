@@ -19,7 +19,7 @@ const PhotoSlider = () => {
           {images.map((image, index) => (
             <div key={index} className="slide">
               <img 
-                src={`/images/${image}`} 
+                src={`${image}`} 
                 alt={`Slide ${index + 1}`} 
                 className="w-full h-full object-cover"
               />
