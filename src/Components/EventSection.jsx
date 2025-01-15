@@ -4,10 +4,10 @@ import './EventSection.css';
 const EventsSection = () => {
   const events = [
     {
-      image: "AILcode_the_future'.jpg",
+      image: "AILcode_the_future.jpg",
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
-      link: "eventAI code the future.html"
+      link: "eventAI_code_the_future.html"
     },
     {
       title: "Coming Soon",
@@ -24,7 +24,7 @@ const EventsSection = () => {
             {event.image ? (
               <a href={event.link}>
                 <img 
-                  src={`/images/${event.image}`} 
+                  src={`./images/${event.image}`} 
                   alt={event.title}
                   className="event-image"
                 />
