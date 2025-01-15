@@ -8,7 +8,7 @@ const PhotoSlider = () => {
     "event_pic3.jpg",
     "event_pic4.jpg",
     "event_pic5.jpg",
-    "event_pic6.jpg",
+    "event.jpg",
     "event_pic7.jpg"
   ];
 
