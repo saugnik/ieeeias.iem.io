@@ -1,14 +1,13 @@
 import React from 'react';
 import './../../src/Components/EventSection.css';
-import AILcode_the_future from './../../src/public/Images/AILcode_the_future.jpg';
 
 const EventsSection = () => {
   const events = [
     {
-      image: {AILcode_the_future},
+      image: "AILcode_the_future.jpg", // Reference the filename as a string
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
-      // link: "eventAI_code_the_future.html"
+      link: "/eventAI_code_the_future.html" // Add correct link or remove if not needed
     },
     {
       title: "Coming Soon",
@@ -23,9 +22,9 @@ const EventsSection = () => {
         {events.map((event, index) => (
           <div key={index} className="event-card">
             {event.image ? (
-              <a href={event.link}>
+              <a href={event.link || "#"}> {/* Add a fallback link */}
                 <img 
-                  src={`/images/${event.image}`} 
+                  src={`/images/${event.image}`} // Access image directly from public folder
                   alt={event.title}
                   className="event-image"
                 />
