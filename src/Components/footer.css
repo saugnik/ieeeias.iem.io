@@ -1,0 +1,67 @@
+/* General Footer Styles */
+footer {
+    background-color: #004085;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+  }
+  
+  /* Footer Text */
+  footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Contact Section */
+  #contact {
+    margin-top: 20px;
+  }
+  
+  #contact h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #contact p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Email Link Styling */
+  #contact a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  #contact a:hover {
+    color: #d1d5db; /* Light gray color on hover */
+  }
+  
+  /* Social Media Section */
+  #contact .flex {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  
+  #contact .flex a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #contact .flex a:hover {
+    background-color: #ffffff33; /* Transparent white background */
+    color: #f3f4f6; /* Lighter gray text color */
+  }
+  

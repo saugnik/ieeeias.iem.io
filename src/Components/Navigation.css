@@ -1,0 +1,52 @@
+/* Navigation Container */
+.nav {
+  background-color: #003366; /* Dark blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation List */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Navigation Items */
+.nav-item {
+  margin: 0 10px; /* Reduced margin for compact spacing */
+}
+
+/* Navigation Links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 12px 20px; /* Comfortable clickable area */
+  display: inline-block;
+  border-radius: 5px; /* Subtle rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  background-color: #00509e; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Adjusted spacing for vertical layout */
+  }
+
+  .nav-link {
+    padding: 10px 15px; /* Smaller padding for mobile view */
+  }
+}
