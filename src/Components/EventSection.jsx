@@ -7,7 +7,7 @@ const EventsSection = () => {
       image: "AILcode_the_future.jpg",
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
-      link: "eventAI_code_the_future.html"
+      // link: "eventAI_code_the_future.html"
     },
     {
       title: "Coming Soon",
