@@ -1,10 +1,11 @@
 import React from 'react';
 import './../../src/Components/EventSection.css';
+import AILcode_the_future from './../../src/public/Images/AILcode_the_future.jpg';
 
 const EventsSection = () => {
   const events = [
     {
-      image: "src\public\Images\AILcode_the_future.jpg",
+      image: {AILcode_the_future},
       title: "AI: Code The Future",
       date: "19th to 21st Oct",
       // link: "eventAI_code_the_future.html"
