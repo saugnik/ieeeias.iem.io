@@ -24,7 +24,7 @@ const EventsSection = () => {
             {event.image ? (
               <a href={event.link}>
                 <img 
-                  src={`./images/${event.image}`} 
+                  src={`/images/${event.image}`} 
                   alt={event.title}
                   className="event-image"
                 />
