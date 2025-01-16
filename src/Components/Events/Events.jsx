@@ -15,25 +15,25 @@ const Events = () => {
         <div className={styles.card}>
           <img src="./Images/Event2.jpg" alt="Event 2" />
           <li>
-            <strong>Event 2:</strong> Coming Soon – Date: 19th to 21st Oct
+            <strong>Event 2:</strong>  – Date: 19th to 21st Oct
           </li>
         </div>
         <div className={styles.card}>
           <img src="./Images/event3.jpg" alt="Event 3" />
           <li>
-            <strong>Event 3:</strong> Coming Soon – Date: 19th to 21st Oct
+            <strong>Event 3:</strong> – Date: 19th to 21st Oct
           </li>
         </div>
         <div className={styles.card}>
           <img src="./Images/event4.jpg" alt="Event 4" />
           <li>
-            <strong>Event 3:</strong> Coming Soon – Date: 19th to 21st Oct
+            <strong>Event 3:</strong>  – Date: 19th to 21st Oct
           </li>
         </div>
         <div className={styles.card}>
           <img src="./Images/event5.jpg" alt="Event 5" />
           <li>
-            <strong>Event 3:</strong> Coming Soon – Date: 19th to 21st Oct
+            <strong>Event 3:</strong>  – Date: 19th to 21st Oct
           </li>
         </div>
       </div>
