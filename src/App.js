@@ -5,7 +5,7 @@ import EventsSection from './Components/EventSection';
 import CWCSection from './Components/CWCSection';
 import PhotoSlider from './Components/PhotoSlider';
 import Footer from './Components/Footer';
-import FacultyAdvisor from './FacultyAdvisor';
+import FacultyAdvisor from './Faculty_advisor';
 
 function App() {
   return (
