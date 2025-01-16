@@ -12,6 +12,17 @@ const PhotoSlider = () => {
     "./Images/event_pic5.jpg",
     "./Images/event_pic6.jpg",
     "./Images/event_pic7.jpg",
+    "./Images/event_pic8.jpg",
+    "./Images/event_pic9.jpg",
+    "./Images/event_pic10.jpg",
+    "./Images/event_pic11.jpg",
+    "./Images/event_pic12.jpg",
+    "./Images/event_pic13.jpg",
+    "./Images/event_pic14.jpg",
+    "./Images/event_pic15.jpg",
+    "./Images/event_pic16.jpg",
+    "./Images/event_pic17.jpg",
+    "./Images/event_pic18.jpg",
   ];
 
   useEffect(() => {
