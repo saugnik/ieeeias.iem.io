@@ -1,15 +1,15 @@
 import React from 'react';
-import './../../src/Components/PhotoSlider.css';
+import './PhotoSlider.css';
 
 const PhotoSlider = () => {
   const images = [
-    "event_pic_1.jpg",
-    "event_pic2.jpg",
-    "event_pic3.jpg",
-    "event_pic4.jpg",
-    "event_pic5.jpg",
-    "event_pic 6.jpg",
-    "event_pic7.jpg"
+    "event pic1.jpg",
+    "event pic2.jpg",
+    "event pic3.jpg",
+    "event pic4.jpg",
+    "event pic5.jpg",
+    "event pic 6.jpg",
+    "event pic 7.jpg"
   ];
 
   return (
@@ -20,7 +20,7 @@ const PhotoSlider = () => {
           {images.map((image, index) => (
             <div key={index} className="slide">
               <img 
-                src={`/Images/${image}`} 
+                src={`/images/${image}`} 
                 alt={`Slide ${index + 1}`} 
                 className="w-full h-full object-cover"
               />
