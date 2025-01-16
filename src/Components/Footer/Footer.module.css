@@ -1,0 +1,49 @@
+.footer {
+  background-color: #004085;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  line-height: 1.6;
+  color: white;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contact li strong {
+  font-weight: 600;
+  color: white;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
