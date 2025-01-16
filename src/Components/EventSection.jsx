@@ -15,6 +15,8 @@ const EventsSection = () => {
     }
   ];
 
+  
+
   return (
     <section id="events" className="events-section">
       <h2 className="events-title">Events</h2>
