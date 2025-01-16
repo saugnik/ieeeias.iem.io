@@ -25,6 +25,8 @@ const PhotoSlider = () => {
     "./Images/event_pic18.jpg",
   ];
 
+  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
