@@ -1,19 +1,43 @@
-import React from 'react';
-import './PhotoSlider.module.css';
+import React, { useEffect, useState } from 'react';
+import styles from './PhotoSlider.module.css';
 
 const PhotoSlider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const images = [
+    "./Images/event_pic1.jpg",
+    "./Images/event_pic2.jpg",
+    "./Images/event_pic3.jpg",
+    "./Images/event_pic4.jpg",
+    "./Images/event_pic5.jpg",
+    "./Images/event_pic6.jpg",
+    "./Images/event_pic7.jpg",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+    }, 1000); // Change slide every 1 second
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [images.length]);
+
   return (
-    <section id="photos">
+    <section id="photos" className={styles.photos}>
       <h2>Photo Slider</h2>
-      <div className="slider">
-        <div className="slides">
-          <img src="./Images/event_pic1.jpg" alt="Image 1" />
-          <img src="./Images/event_pic2.jpg" alt="Image 2" />
-          <img src="./Images/event pic3.jpg" alt="Image 3" />
-          <img src="./Images/event_pic4.jpg" alt="Image 4" />
-          <img src="./Images/event_pic5.jpg" alt="Image 5" />
-          <img src="./Images/event_pic6.jpg" alt="Image 6" />
-          <img src="./Images/event_pic7.jpg" alt="Image 7" />
+      <div className={styles.slider}>
+        <div
+          className={styles.slides}
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Image ${index + 1}`}
+              className={styles.slideImage}
+            />
+          ))}
         </div>
       </div>
     </section>

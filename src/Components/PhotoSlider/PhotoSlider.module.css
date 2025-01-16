@@ -1,54 +1,31 @@
 .photos {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 1000px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .slider {
-    width: 100%;
-    max-width: 800px;
-    margin: 30px auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-  
-  .slides {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    animation: slideAnimation 15s infinite;
-  }
-  
-  .slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  @keyframes slideAnimation {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }
-    100% { transform: translateX(0); }
-  }
-  
-  @media (max-width: 768px) {
-    .slider {
-      height: auto;
-    }
-  
-    .slides {
-      height: auto;
-    }
-  }
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.photos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slideImage {
+  width: 100%;
+  flex: 0 0 100%;
+  border-radius: 15px; /* Rounded corners */
+  object-fit: cover; /* Ensures the image covers the square area */
+  aspect-ratio: 1 / 1; /* Makes the images square */
+  margin: 0 0.5rem; /* Adds spacing between images */
+}

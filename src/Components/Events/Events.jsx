@@ -7,13 +7,15 @@ const Events = () => {
       <h2>Events</h2>
       <div className={styles.cards}>
         <div className={styles.card}>
-          <a href="/event/kPk20code%20Intel%20future.html">
-            <img src="./Images/event.jpg" alt="Event 1" />
-          </a>
-          <li><strong>Event 1:</strong> AI: Code The Future – Date: 19th to 21st Oct</li>
+          <img src="./Images/event.jpg" alt="Event 1" />
+          <li>
+            <strong>Event 1:</strong> AI: Code The Future – Date: 19th to 21st Oct
+          </li>
         </div>
         <div className={styles.card}>
-          <li><strong>Event 2:</strong> Coming Soon – Date: Coming Soon</li>
+          <li>
+            <strong>Event 2:</strong> Coming Soon – Date: Coming Soon
+          </li>
         </div>
       </div>
     </section>
